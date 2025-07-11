@@ -1,0 +1,59 @@
+/* Global styles for HealthBridge */
+
+/* Ensure consistent box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure proper focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button,
+  input,
+  textarea,
+  select {
+    min-height: 44px;
+  }
+}
+
+/* Ensure proper image scaling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve form element styling across browsers */
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Ensure proper backdrop blur support */
+.backdrop-blur-md {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+/* Improve animation performance */
+* {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+} 

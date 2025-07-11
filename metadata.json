@@ -1,0 +1,5 @@
+{
+  "name": "HealthBridge",
+  "description": "A clean, accessible, and responsive website for HealthBridge, offering in-person and virtual consultations. Built with React and Tailwind CSS.",
+  "requestFramePermissions": []
+}

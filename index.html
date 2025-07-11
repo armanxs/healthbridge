@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>HealthBridge</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/react-datepicker@5.2.0/dist/react-datepicker.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              satoshi: ['Satoshi', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+    <style>
+      /* Simple smooth scroll for anchor links */
+      html {
+        scroll-behavior: smooth;
+        -webkit-scroll-behavior: smooth;
+        -moz-scroll-behavior: smooth;
+      }
+      .react-datepicker-wrapper,
+      .react-datepicker__input-container {
+        display: block;
+        width: 100%;
+      }
+      .react-datepicker__input-container input {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        background-color: white;
+        color: #0f172a; /* slate-900 */
+        border: 1px solid #cbd5e1; /* slate-300 */
+        border-radius: 0.375rem;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      }
+      .react-datepicker__input-container input:focus {
+        outline: none;
+        --tw-ring-color: #0ea5e9; /* sky-500 */
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        border-color: #0ea5e9; /* sky-500 */
+      }
+    </style>
+  <!-- Import maps for modern browsers -->
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.23.0",
+    "react-hook-form": "https://esm.sh/react-hook-form@7.51.2",
+    "react-datepicker": "https://esm.sh/react-datepicker@5.2.0",
+    "date-fns": "https://esm.sh/date-fns@3.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <!-- Fallback for browsers that don't support import maps -->
+  <script>
+    if (!window.importMapPolyfill) {
+      // Redirect to a bundled version or show a message
+      console.warn('Import maps not supported. Consider using a bundler for better browser compatibility.');
+    }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
